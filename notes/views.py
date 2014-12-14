@@ -1,6 +1,8 @@
 # Create your views here.
 from models import Note
 from django.http import HttpResponseRedirect,HttpResponseServerError
+from django.utils import simplejson
+from django.http import HttpResponse
 
 def create_note(request):
 	error_msg=u"No POST data sent."
